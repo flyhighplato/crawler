@@ -1,0 +1,7 @@
+.librarian
+.vagrant
+puppet/modules/apt
+puppet/modules/cassandra
+puppet/modules/java7
+puppet/modules/stdlib
+Puppetfile.lock

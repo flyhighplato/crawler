@@ -1,0 +1,4 @@
+forge 'http://forge.puppetlabs.com'
+
+mod 'spantree/java7', '0.2.2'
+mod 'puppetlabs/apt', '1.5.1'
