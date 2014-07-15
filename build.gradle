@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin:'application'
+
+mainClassName = "com.flyhighplato.CrawlerMain"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.codehaus.groovy:groovy:2.0.7'
+	compile 'log4j:log4j:1.2.17'
+
+    compile 'com.netflix.astyanax:astyanax-core:1.56.49'
+    compile 'com.netflix.astyanax:astyanax-thrift:1.56.49'
+    compile 'com.netflix.astyanax:astyanax-cassandra:1.56.49'
+    compile 'com.netflix.astyanax:astyanax-recipes:1.56.49'
+
+	testCompile 'org.spockframework:spock-grails-support:0.7-groovy-2.0'
+}

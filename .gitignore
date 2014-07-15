@@ -5,3 +5,6 @@ puppet/modules/cassandra
 puppet/modules/java7
 puppet/modules/stdlib
 Puppetfile.lock
+.gradle
+.idea
+crawler.iml

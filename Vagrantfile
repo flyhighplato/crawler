@@ -14,9 +14,6 @@ Vagrant.configure("2") do |config|
   config.hostmanager.include_offline = true
 
   config.vm.hostname = "crawler.local"
-  config.vm.network "forwarded_port", guest: 8888, host: 8888, protocol: 'tcp'
-  config.vm.network "forwarded_port", guest: 9160, host: 9160, protocol: 'tcp'
-  config.vm.network "forwarded_port", guest: 9042, host: 9042, protocol: 'tcp'
 
   config.vm.provider :virtualbox do |v, override|
     override.vm.network :private_network, ip: "192.168.80.137"
